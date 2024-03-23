@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/web.png)
-![](./design/mobile.png)
+![](./design/Mobile.png)
 
 
 
