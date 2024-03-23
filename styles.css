@@ -1,22 +1,4 @@
 @font-face {
-    font-family: 'Hanken-bold';
-    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Hanken-extrabold';
-    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Hanken-medium';
-    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
     font-family: 'Hanken';
     src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
@@ -28,12 +10,24 @@
     font-family: 'Hanken', sans-serif;
 }
 
+html{
+    background: linear-gradient(to bottom, 
+        hsl(0, 0%, 100%), 
+        hsl(221, 100%, 96%), 
+        hsl(241, 100%, 89%), 
+        hsla(224, 30%, 27%, 0.1)
+    );
+}
+
 .container {
     max-width: 1440px;
     width: 60vw;
     height: 80vh;
     margin-top: 10vh;
     margin-left: 20vw;
+    border: 0px;
+    border-radius: 5%;
+    background: white;
     display: flex;
 }
 
@@ -48,9 +42,9 @@
 }
 
 .header {
-    color: white;
+    color: hsla(0, 0%, 100%,0.5);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     width: auto;
 }
 
@@ -67,7 +61,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: auto;
 }
 
 .overall {
@@ -79,7 +72,7 @@
 .outof {
     font-size: 1.2vw;
     margin-top: -1.2rem;
-    color: white;
+    color: hsla(0, 0%, 100%,0.5);
 }
 
 .state {
@@ -97,8 +90,8 @@
     font-weight: 500;
     text-align: center;
     font-size: 18px; 
-    max-width: 70%;
-    color: white;
+    max-width: 65%;
+    color: hsla(0, 0%, 100%,0.5);
     margin: 0 auto;
     margin-bottom: 3vw; 
     width: auto;
@@ -114,17 +107,152 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 
 .sumheader{
     color: black;
-    text-align: center;
-    margin-top: 1rem;
+    margin-top: 5%;
+    position: relative;
+    margin-left: 10%;
 }
 
-@media (max-width: 500px){
+.features{
+    width: 80%;
+    height: 12%;
+    margin-left: 10%;
+    margin-bottom: -2%;
+    display: flex;
+    border: 0;
+    border-radius: 15px;
+    align-items: center;
+    font-size: large;
+    
+}
+
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    
+}
+
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual{
+    background-color:  hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 1vh;
+}
+
+#sumfigure{
+    margin-top: 1%;
+    flex-grow: 1;
+    margin-left: 10%;
+}
+
+#reactiontext{
+    flex-grow: 3;
+    color: hsla(0, 100%, 67%, 1);
+    margin-left: -10%;
+}
+
+#memorytext{
+    flex-grow: 3;
+    color: hsla(39, 100%, 56%, 1);
+    margin-left: -10%;
+}
+
+#verbaltext{
+    flex-grow: 3;
+    color: hsla(166, 100%, 37%, 1);
+    margin-left: -10%;
+}
+
+#visualtext{
+    flex-grow: 3;
+    color: hsla(234, 85%, 45%, 1);
+    margin-left: -10%;
+}
+
+.percent{
+    display: flex;
+    margin-right: 5%;
+}
+
+#sumpercentage{
+    flex-grow: 1;
+}
+
+#per100{
+    color: grey;
+}
+
+.button {
+    width: 80%;
+    height: 12%;
+    margin-left: 10%;
+    margin-bottom: 3vh;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10% / 50%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+
+
+@media (max-width: 376px){
+    .header{
+        margin-top: 2vw;
+        font-size: 5vw;
+    }
+    .percentage{
+        width: 35%;
+        height: 45%;
+        border: 0;
+        border-radius: 50%;
+    }
+    .overall{
+        font-size: 15vw;
+    }
+    .outof{
+        font-size: 3vw;
+    }
+    .state{
+        font-size: 5vw;
+    }
+    .explanation{
+        font-size: 4vw;
+        max-height: 10%;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5vw; 
+    }
     .container{
+        margin: 0 0;;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+    .score{
+        border-radius: 0 0 25px 25px;
+        height: 40vh;
+        width: 100vw;
+    }
+    .summary{
+        height: 60vh;
+        width: 100vw;
+    }
+    .sumheader{
+        font-size: 18px;
     }
 }
