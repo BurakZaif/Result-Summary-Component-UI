@@ -10,15 +10,16 @@
     font-family: 'Hanken', sans-serif;
 }
 
-html{
+/* Body Background  */
+body{
     background: linear-gradient(to bottom, 
         hsl(0, 0%, 100%), 
         hsl(221, 100%, 96%), 
         hsl(241, 100%, 89%), 
-        hsla(224, 30%, 27%, 0.1)
-    );
+        hsla(224, 30%, 27%, 0.1));
 }
 
+/* Container Style values */
 .container {
     max-width: 1440px;
     width: 60vw;
@@ -31,6 +32,7 @@ html{
     display: flex;
 }
 
+/* Score Part - Left Side of the design */
 .score {
     width: 50%;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -42,9 +44,10 @@ html{
 }
 
 .header {
+    font-size: 2vw;
     color: hsla(0, 0%, 100%,0.5);
     text-align: center;
-    margin-top: 0.2rem;
+    margin-top: 1rem;
     width: auto;
 }
 
@@ -78,7 +81,7 @@ html{
 .state {
     color: white;
     margin: 0 auto;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-top: -1.5vw;
     margin-bottom: -1vw;
     width: auto;
@@ -89,8 +92,8 @@ html{
     font-family: 'Hanken-extrabold', sans-serif;
     font-weight: 500;
     text-align: center;
-    font-size: 18px; 
-    max-width: 65%;
+    font-size: 1.5vw; 
+    max-width: 70%;
     color: hsla(0, 0%, 100%,0.5);
     margin: 0 auto;
     margin-bottom: 3vw; 
@@ -98,7 +101,7 @@ html{
 }
 
 
-/* Summary part */
+/* Summary part - right side of the design*/
 
 .summary{
     width: 50%;
@@ -107,13 +110,12 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: relative;
 }
 
 .sumheader{
+    font-size: 2vw;
     color: black;
     margin-top: 5%;
-    position: relative;
     margin-left: 10%;
 }
 
@@ -130,52 +132,16 @@ html{
     
 }
 
-#reaction{
-    background-color: hsla(0, 100%, 67%, 0.1);
-    
-}
-
-#memory{
-    background-color: hsla(39, 100%, 56%, 0.1);
-}
-
-#verbal{
-    background-color: hsla(166, 100%, 37%, 0.1);
-}
-
-#visual{
-    background-color:  hsla(234, 85%, 45%, 0.1);
-    margin-bottom: 1vh;
-}
-
 #sumfigure{
     margin-top: 1%;
     flex-grow: 1;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 
-#reactiontext{
+#text{
+    font-size: 1.5vw;
     flex-grow: 3;
-    color: hsla(0, 100%, 67%, 1);
-    margin-left: -10%;
-}
-
-#memorytext{
-    flex-grow: 3;
-    color: hsla(39, 100%, 56%, 1);
-    margin-left: -10%;
-}
-
-#verbaltext{
-    flex-grow: 3;
-    color: hsla(166, 100%, 37%, 1);
-    margin-left: -10%;
-}
-
-#visualtext{
-    flex-grow: 3;
-    color: hsla(234, 85%, 45%, 1);
-    margin-left: -10%;
+    margin-left: -9%;
 }
 
 .percent{
@@ -185,18 +151,22 @@ html{
 
 #sumpercentage{
     flex-grow: 1;
+    font-size: 1.5vw;
 }
 
 #per100{
     color: grey;
+    font-size: 1.5vw;
 }
 
+/* Continue Button */
 .button {
     width: 80%;
     height: 12%;
     margin-left: 10%;
     margin-bottom: 3vh;
-    font-size: 18px;
+    margin-top: 2vh;
+    font-size: 1.5vw;
     border: 0;
     border-radius: 10% / 50%;
     background-color: hsl(224, 30%, 27%);
@@ -208,6 +178,7 @@ html{
     background-color: hsl(241, 81%, 54%);
 }
 
+/* When the width less than 376px for mobile devices */
 
 @media (max-width: 376px){
     .header{
@@ -223,7 +194,7 @@ html{
     .overall{
         font-size: 15vw;
     }
-    .outof{
+    .outof, .state, .explanation{
         font-size: 3vw;
     }
     .state{
@@ -237,7 +208,7 @@ html{
         margin-bottom: 5vw; 
     }
     .container{
-        margin: 0 0;;
+        margin: 0;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -252,7 +223,7 @@ html{
         height: 60vh;
         width: 100vw;
     }
-    .sumheader{
+    .sumheader, #text, #sumpercentage, #per100, .button {
         font-size: 18px;
     }
 }

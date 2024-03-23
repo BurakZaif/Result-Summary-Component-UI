@@ -7,8 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -17,6 +16,8 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- Score Part - Left Part of design -->
     <div class="score">
       <h1 class="header">Your Result</h1>
       <div class="percentage">
@@ -26,55 +27,83 @@
       <div class="state">
         <strong>Great</strong>
       </div>
+      <!-- Explanation under the score -->
       <div class="explanation">
         <p>
         You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
     </div>
+    <!-- Summary Part - Right Part of design -->
     <div class="summary">
-      <h1 class="sumheader"><strong>Summary</strong></h1>
-      <div class="features" id="reaction">
-        <div id="sumfigure"><img src="./assets/images/icon-reaction.svg" alt="Reaction"></div>
-        <div id="reactiontext"><strong>Reaction</strong></div>
+
+      <h1 class="sumheader">
+        <strong>Summary</strong>
+      </h1>
+      <!-- Reaction Percentage -->
+      <div class="features"  style="background-color:hsla(0, 100%, 67%, 0.1);">
+        <div id="sumfigure">
+          <img src="./assets/images/icon-reaction.svg" alt="Reaction">
+        </div>
+        <div id="text" style="color: hsla(0, 100%, 67%, 1);">
+          <strong>Reaction</strong>
+        </div>
         <div class="percent">
           <div id="sumpercentage"><strong>80 &nbsp;</strong></div>
           <div id="per100"> / 100</div> 
         </div>
       </div>
-      <div class="features" id="memory">
-        <div id="sumfigure"><img src="./assets/images/icon-memory.svg" alt="Memory"></div>
-        <div id="memorytext"><strong>Memory</strong></div>
+      <!-- Memory Percentage -->
+      <div class="features" style="background-color:hsla(39, 100%, 56%, 0.1);">
+        <div id="sumfigure">
+          <img src="./assets/images/icon-memory.svg" alt="Memory">
+        </div>
+        <div id="text" style="color: hsla(39, 100%, 56%, 1);">
+          <strong>Memory</strong>
+        </div>
         <div class="percent">
           <div id="sumpercentage"><strong>92 &nbsp;</strong></div>
           <div id="per100"> / 100</div> 
         </div>
       </div>
-      <div class="features" id="verbal">
-        <div id="sumfigure"><img src="./assets/images/icon-verbal.svg" alt="Verbal"></div>
-        <div id="verbaltext"><strong>Verbal</strong></div>
+      <!-- Verbal Percentage -->
+      <div class="features" style="background-color:hsla(166, 100%, 37%, 0.1);">
+        <div id="sumfigure">
+          <img src="./assets/images/icon-verbal.svg" alt="Verbal">
+        </div>
+        <div id="text" style="color: hsla(166, 100%, 37%, 1);">
+          <strong>Verbal</strong>
+        </div>
         <div class="percent">
           <div id="sumpercentage"><strong>61 &nbsp;</strong></div>
           <div id="per100"> / 100</div> 
         </div>
       </div>
-      <div class="features" id="visual">
-        <div id="sumfigure"><img src="./assets/images/icon-visual.svg" alt="Visual"></div>
-        <div id="visualtext"><strong>Visual</strong></div>
+      <!-- Visual Percentage -->
+      <div class="features" style="background-color: hsla(234, 85%, 45%, 0.1);">
+        <div id="sumfigure">
+          <img src="./assets/images/icon-visual.svg" alt="Visual">
+        </div>
+        <div id="text" style="color: hsla(234, 85%, 45%, 1);">
+          <strong>Visual</strong>
+        </div>
         <div class="percent">
           <div id="sumpercentage"><strong>72 &nbsp;</strong></div>
           <div id="per100"> / 100</div> 
         </div>
-        
-      </div>
-      <button class="button"><strong>Continue</strong></button>
       
+      </div>
+      <!-- Continue Button -->
+      <button class="button">
+        <strong>Continue</strong>
+      </button>
       
     </div>
   </div>
   
   <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/BurakZaif">BurakZaif</a>.
   </div>
+
 </body>
 </html>
