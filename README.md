@@ -3,6 +3,8 @@
 ![](Mobile.png)
 ![](web.png)
 
+You can see the actual web site use this link https://burakzaif.github.io/Result-Summary-Component-UI/
+
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
