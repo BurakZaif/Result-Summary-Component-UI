@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](Result_Design/Web_Browser_Appearance.png)
-![](Result_Design/Mobile_Device_Appearance.png)
+![](web.png)
+![](mobile.png)
 
 
 
