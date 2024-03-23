@@ -13,8 +13,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -25,11 +23,11 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
 
-![](./Result_Design/WebBro)
+![](Result_Design/Web_Browser_Appearance.png)
+![](Result_Design/Mobile_Device_Appearance.png)
 
 
 
