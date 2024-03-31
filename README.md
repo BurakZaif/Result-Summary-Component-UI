@@ -62,7 +62,6 @@ body{
 
 After this project, I will continue to learn JavaScript. I really want to make dynamic my codes with JS. So will enhance my Front-End knowledge with JS and so on. That's my goal 😁. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
